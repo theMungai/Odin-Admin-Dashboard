@@ -45,12 +45,32 @@ body{
 }
 
 .dashboard h1{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--white);
 }
 
 .dashboard-logo{
     width: 50px;
+}
+
+.dashboard-grid{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.dashboard-grid{
+    color: var(--white);
+    margin-top: 80px;
+    gap: 1rem;
+}
+
+.dashboard-grid .fa-solid{
+    font-size: 1.3rem;
+}
+
+.dashboard-grid h1{
+    font-size: 1.3rem;
 }
 
 /*========================== Header Grid Item ================== */
