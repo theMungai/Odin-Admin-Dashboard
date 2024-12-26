@@ -300,10 +300,10 @@ hr{
 .trending-username{
     color: black;
     font-weight: 480;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
 }
 
 .trending-status{
     color: var(--dark-gray);
-    font-size: 0.95rem; 
+    font-size: 0.9rem; 
 }
