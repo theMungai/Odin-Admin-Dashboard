@@ -121,8 +121,8 @@ body{
     height: 50px;
 }
 
-.top-profile .fa-solid{
-    font-size: 1.6rem;
+.top-profile .notification-bell{
+    width: 30px;
 }
 
 .top-profile .profile-image img{
@@ -173,5 +173,137 @@ body{
 
 .main-container{
     grid-area: main-container;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    gap: 2rem;
 }
 
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;;
+    gap: 1.5rem;
+    grid-template-areas: 
+    "heading heading"
+    "super-cool less-cool"
+    "impossible-app easy-peasy-app"
+    "ad-blocker money-maker";
+}
+
+.projects-heading{
+    grid-area: heading;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.super-cool{
+    grid-area: super-cool;
+}
+
+.less-cool{
+    grid-area: less-cool;
+}
+
+.impossible-app{
+    grid-area: impossible-app;
+}
+
+.easy-peasy-app{
+    grid-area: easy-peasy-app;
+}
+
+.ad-blocker{
+    grid-area: ad-blocker;
+}
+
+.money-maker{
+    grid-area: money-maker;
+}
+
+.projects {
+    border-left: 8px solid var(--orange-yellowish);
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+}
+
+.head{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.description{
+    color: var(--light-gray);
+}
+
+.project-icons{
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 60px;
+    float: right;
+}
+
+.project-icons img{
+    width: 30px;
+    
+}
+
+.announncements-trending{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.announcements-list{
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+hr{
+    margin: 20px 0px;
+    border: 0.1px solid rgba(212, 212, 212, 0.795);
+    height: 0.9px;
+}
+
+
+.announcements-list p {
+    color: var(--light-gray);
+    font-size: 0.8rem;
+}
+
+
+.trending-profiles {
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.profile-user{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin: 30px 0px;
+}
+
+.profile-user .image-trending{
+    width: 50px;
+    height: 50px;
+}
+
+.profile-user .image-trending img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.trending-username{
+    color: black;
+    font-weight: 480;
+    font-size: 0.95rem;
+}
+
+.trending-status{
+    color: var(--dark-gray);
+    font-size: 0.95rem; 
+}
